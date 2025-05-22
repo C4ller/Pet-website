@@ -1,0 +1,27 @@
+<div class="content">
+    <fieldset>
+    <legend>Create an Account</legend>
+        <form onsubmit="checkUser(event, '/creation')">
+            <label for="username" >Username:</label>
+            <input type="text" name="username" id="username">
+            <% if (typeof warning !== 'undefined' && warning) { %>
+                 <br> <p style="color:red">warning</p>
+            <% } %>
+            <br>
+            Please input a username. A username can contain letters (both upper and lower case) and digits only.
+
+            <br>
+            <label for="password" >Password:</label>
+            <input type="password" name="password" id="password">
+            <br>
+            Your password must be at least 4 characters long (letters and numbers only), have at least one letter and at least one digit.
+            <br>
+                    <input type="submit" value="Submit" id="adopt">
+                    <input type="reset" value="Clear">
+            <br>
+        </form>
+    </fieldset>
+    <% if (typeof message !== 'undefined' && message) { %>
+        <p><%= message %></p>
+    <% } %>
+</div>
