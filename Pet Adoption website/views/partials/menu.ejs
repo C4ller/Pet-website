@@ -1,0 +1,14 @@
+<div class="side-menu">
+    <ul>
+        <li class="<%= currentPage === '/' ? 'active' : '' %>"><a href="/">Home</a></li>
+        <li class="<%= currentPage === '/adopt' ? 'active' : '' %>"><a href="/adopt">Find a dog/cat</a></li>
+        <li class="<%= currentPage === '/dogcare' ? 'active' : '' %>"><a href="/dogcare">Dog Care</a></li>
+        <li class="<%= currentPage === '/catcare' ? 'active' : '' %>"><a href="/catcare">Cat Care</a></li>
+        <li class="<%= currentPage === '/account' ? 'active' : '' %>"><a href="/account">Create an Account</a></li>
+        <li class="<%= currentPage === '/giveaway' ? 'active' : '' %>"><a href="/giveaway">Give pet away</a></li>
+        <li class="<%= currentPage === '/contact' ? 'active' : '' %>"><a href="/contact">Contact us</a></li>
+        <% if (typeof username !== 'undefined') { %>
+            <li><a href="/logout">Log Out</a></li>
+        <% } %>
+    </ul>
+</div>

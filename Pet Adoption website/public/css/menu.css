@@ -1,0 +1,155 @@
+body {
+    margin:0;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 3fr;
+    min-height: 100%;
+    overflow: auto;
+    font-family: 'Be Vietnam Pro';
+}
+
+h1 {
+    font-family: 'Bagel Fat One';
+}
+
+.side-menu{
+    margin: 0px;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    height:100vh;
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 2;
+    display:flex;
+}
+
+.side-menu ul{
+    padding-left: 0;
+    margin:0;
+    display:flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.side-menu li{
+    color: black; 
+    background-color: rgb(155, 198, 243); 
+    list-style-type: none; 
+    padding-left: 15px;
+    box-sizing: border-box;
+    display:flex;
+    flex:1;
+    position: relative;
+    }
+
+.side-menu li a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: inherit;
+    display:flex;
+    align-items: center;
+}
+
+.side-menu li:hover {
+    color: white;
+    background-color: rgb(77, 163, 221); 
+    list-style-type: none; 
+    padding-left: 15px; 
+    flex:1;
+    align-items: center;
+}
+
+.side-menu .active{
+    color:white;
+    background-color: rgb(17, 111, 174);
+}
+   
+.header {
+    /*background-image: url(https://images.unsplash.com/photo-1521193089946-7aa29d1fe776?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);*/
+    background-color: beige;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+    margin:0px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.header img {
+    width: 40px; 
+    height: auto;
+}
+
+.header #date{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size: small;
+}
+
+.footer {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: rgb(50, 105, 188);
+    margin: 0;
+    padding:10px;
+}
+
+.footer a{
+    color:white;
+}
+
+.footer a:visited{
+    color:lightblue;
+}
+
+.content{
+    padding:20px;
+    grid-row:2;
+    grid-column:2;
+    background-color: rgb(117, 176, 227);
+}
+
+.samplePet{
+    background-color: white;
+    border: solid black 4px;
+    margin-bottom: 5%;
+}
+
+.samplePet h3{
+    padding:0px;
+}
+
+.samplePet li{
+    list-style-position: inside;
+}
+
+.samplePet input[type="button"] {
+    color: black; 
+    background-color: rgb(155, 198, 243); 
+}
+
+.samplePet input[type="button"]:hover {
+    color: white;
+    background-color: rgb(77, 163, 221);
+}
+
+.samplePet input[type="button"]:active {
+    color: white;
+    background-color: rgb(181, 53, 197);
+    box-shadow: 0 2px #666;
+}
+
+.browseImg img{
+    float:left;
+    max-width: 35%;
+    max-height: 300px;
+    padding: 10px;
+    background-color: rgb(117, 176, 227);
+    margin: 20px;
+    border: solid rgb(17, 111, 174) 2px;
+}

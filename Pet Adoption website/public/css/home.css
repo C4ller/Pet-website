@@ -1,0 +1,19 @@
+.content {
+    font-size: medium;
+    font-weight: bold;
+}
+
+p{
+    font-weight: lighter;
+}
+
+#firstimg{
+    float:left;
+    width: 40%;
+    margin:20px;
+}
+
+#secondimg{
+    float:right;
+    width: 60%;
+}

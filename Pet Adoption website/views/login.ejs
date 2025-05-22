@@ -1,0 +1,20 @@
+<div class="content">
+    <fieldset>
+    <legend>Login</legend>
+        <form onsubmit="checkUser(event, '/login')">
+            <label for="username" >Username:</label>
+            <input type="text" name="username" id="username">
+            <br>
+
+            <br>
+            <label for="password" >Password:</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <br>
+                    <input type="submit" value="Submit" id="adopt">
+                    <input type="reset" value="Clear">
+            <br>
+        </form>
+    </fieldset>
+    <p style="color:red"> <%=message%> </p>
+</div>
