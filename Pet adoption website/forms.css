@@ -1,0 +1,16 @@
+fieldset {
+    background-color: white;
+    border: solid black 4px;
+}
+
+form {
+    font-weight: bold;
+}
+
+label{
+    font-weight:lighter;
+}
+
+legend {
+    font-weight: bold;
+}

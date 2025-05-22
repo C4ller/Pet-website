@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8: Adopt a Cat/Dog pt1</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="forms.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="petSite.js"></script>
+    
+</head>
+<body>
+    <div class="header">
+        <div id="date">
+        </div>
+        <a href="Home.html"><img src="https://assets.stickpng.com/thumbs/58af004d6c252499281ae910.png" title="https://www.stickpng.com/img/download/58aeffb2c869e092af51ee74" alt="Paw print image"></a>
+        <h1>Find a friend</h1>
+        <a href="Home.html"><img src="https://assets.stickpng.com/thumbs/58af004d6c252499281ae910.png" title="https://www.stickpng.com/img/download/58aeffb2c869e092af51ee74" alt="Paw print image"></a>   
+    </div>
+    
+    <div class="side-menu">
+        <ul>
+            <li ><a  href="Home.html">Home</a></li>
+            <li><a href="Browsepets.html">Browse pets</a></li>
+            <li class="active"><a href="adopt.html">Find a dog/cat</a></li>
+            <li><a href="Dogcare.html">Dog Care</a></li>
+            <li><a href="Catcare.html">Cat Care</a></li>
+            <li><a href="giveaway.html">Give pet away</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <fieldset>
+        <legend>Adoption search form</legend>
+            <form onsubmit="return checkFieldsAdopt(event)">
+                Which type of animal do you want to adopt?<br><br>
+                        <input type="radio" id="AType1" name="Animal" value="Cat">
+                        <label for="AType1">Cat</label>
+                        <input type="radio" id="AType2" name="Animal" value="Dog">
+                        <label for="AType1">Dog</label>
+                <br>
+                <br>What breed are you looking for?<br><br>
+                        <input type="checkbox" id="dog1" name="dog1" value="Husky" class="breed">
+                        <label for="dog1"> Husky</label>
+                        <input type="checkbox" id="dog2" name="dog2" value="Golden" class="breed">
+                        <label for="dog2"> Golden Retriever</label>
+                        <input type="checkbox" id="dog3" name="dog3" value="Corgi" class="breed">
+                        <label for="dog3"> Corgi</label>
+                        <input type="checkbox" id="dog4" name="dog4" value="Poodle" class="breed">
+                        <label for="dog4"> Poodle</label>
+                        <input type="checkbox" id="cat1" name="cat1" value="Siamese" class="breed">
+                        <label for="cat1"> Siamese</label>
+                        <input type="checkbox" id="cat2" name="cat2" value="Coon" class="breed">
+                        <label for="cat2"> Maine Coon</label>
+                        <input type="checkbox" id="cat3" name="cat3" value="Shorthair" class="breed">
+                        <label for="cat3"> British shorthair</label>
+                        <input type="checkbox" id="other" name="other" value="other" class="breed">
+                        <label for="other"> Other</label>
+                        <input type="checkbox" id="any" name="any" value="any" class="breed">
+                        <label for="any"> Doesn't matter</label>
+                <br>
+                <br>
+                        How old do you want your adopted pet to be?<br><br>
+                        <label for="age">A good age for my pet would be:</label>
+                        <select id="age" name="preffered age">
+                            <option value="idc" selected>Any age</option>
+                            <option value="pup">Less than 6mo</option>
+                            <option value="2yr">Less than 2 years old</option>
+                            <option value="4yr">2 to 4 years old</option>
+                            <option value="6years">4 to 6 years old</option>
+                            <option value="6 to 10">6 to 10 years old</option>
+                            <option value="old">10 and above</option>
+                            
+                        </select>
+                <br>
+                <br>
+                        Prefered gender for the animal:<br><br>
+                        <input type="radio" id="female" name="Gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="male" name="Gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="idc" name="Gender" value="either">
+                        <label for="idc">Doesn't matter</label>
+                <br>
+                <br>
+                Does your pet need to have good behavior with any (or multiple) of the following?<br><br>
+                        <input type="checkbox" id="dog" name="dog" value="Bdog" class="niceOrnot">
+                        <label for="dog"> Other dogs</label>
+                        <input type="checkbox" id="cat" name="cat" value="Bcat" class="niceOrnot">
+                        <label for="cat"> Other cats</label>
+                        <input type="checkbox" id="kid" name="kid" value="Bchildren" class="niceOrnot">
+                        <label for="kid"> Small children</label>
+                <br>
+                <br>
+                        <input type="submit" value="Submit" id="adopt">
+                        <input type="reset" value="Clear">
+                <br>
+            </form>
+        </fieldset>
+    </div>
+    <div class="footer">
+        <a href="Disclaimer.html"> Privacy policy</a>
+    </div>
+</body>
+</html>
